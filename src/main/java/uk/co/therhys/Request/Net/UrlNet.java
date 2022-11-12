@@ -30,7 +30,11 @@ public class UrlNet extends Net {
             byte[] toSend = data.getBytes();
 
             //http.setFixedLengthStreamingMode(toSend.length);
-            http.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+
+            if(!headers.containsKey("Content-Type")){
+                headers.put("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+            }
+
             http.connect();
 
             OutputStream os = null;
