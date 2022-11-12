@@ -50,11 +50,14 @@ public class UrlNet extends Net {
 
             InputStream is =  new BufferedInputStream(http.getInputStream());
 
+            int actualLength = 0;
+
             ByteBuffer buf = ByteBuffer.allocate(length);
             byte[] line = new byte[chunkSize];
             while(true){
                 int len = is.read(line, 0, chunkSize);
                 if(len != -1) {
+                    actualLength += len;
                     for(int i=0 ; i<len ; i++){
                         buf.put(line[i]);
                     }
@@ -63,9 +66,9 @@ public class UrlNet extends Net {
                 }
             }
 
-            res.data = buf.array();
+            res.data = buf.compact().array();
 
-            res.length = res.data.length;
+            res.length = actualLength;
 
         }catch (Exception e){
             res.hadError = true;
@@ -105,11 +108,13 @@ public class UrlNet extends Net {
 
             InputStream is =  new BufferedInputStream(http.getInputStream());
 
+            int actualLength = 0;
             ByteBuffer buf = ByteBuffer.allocate(length);
             byte[] line = new byte[chunkSize];
             while(true){
                 int len = is.read(line, 0, chunkSize);
                 if(len != -1) {
+                    actualLength += len;
                     for(int i=0 ; i<len ; i++){
                         buf.put(line[i]);
                     }
@@ -118,9 +123,9 @@ public class UrlNet extends Net {
                 }
             }
 
-            res.data = buf.array();
+            res.data = buf.compact().array();
 
-            res.length = res.data.length;
+            res.length = actualLength;
 
         }catch (Exception e){
             res.hadError = true;

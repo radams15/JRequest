@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Make Jenkins clean before compile.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix infinite length." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668259824412</updated>
       <workItem from="1668259826800" duration="3372000" />
-      <workItem from="1668264631314" duration="944000" />
+      <workItem from="1668264631314" duration="1246000" />
     </task>
     <task id="LOCAL-00001" summary="Working.">
       <created>1668261114610</created>
@@ -123,7 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668265141690</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fix post method also.">
+      <created>1668265612781</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668265612781</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix infinite length.">
+      <created>1668265870392</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668265870392</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +160,8 @@
     <MESSAGE value="Bump version, hardcode to compile java 1.4." />
     <MESSAGE value="Fix when content-length is undefined." />
     <MESSAGE value="Make Jenkins clean before compile." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make Jenkins clean before compile." />
+    <MESSAGE value="Fix post method also." />
+    <MESSAGE value="Fix infinite length." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix infinite length." />
   </component>
 </project>
