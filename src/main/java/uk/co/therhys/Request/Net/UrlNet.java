@@ -43,9 +43,14 @@ public class UrlNet extends Net {
                 }
             }
 
+            int length = http.getContentLength();
+            if(length == -1){
+                length = 1000*1000; // = 1MB;
+            }
+
             InputStream is =  new BufferedInputStream(http.getInputStream());
 
-            ByteBuffer buf = ByteBuffer.allocate(http.getContentLength());
+            ByteBuffer buf = ByteBuffer.allocate(length);
             byte[] line = new byte[chunkSize];
             while(true){
                 int len = is.read(line, 0, chunkSize);

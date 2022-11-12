@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix when content-length is undefined." />
+    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Make Jenkins clean before compile.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668259824412</updated>
       <workItem from="1668259826800" duration="3372000" />
-      <workItem from="1668264631314" duration="496000" />
+      <workItem from="1668264631314" duration="944000" />
     </task>
     <task id="LOCAL-00001" summary="Working.">
       <created>1668261114610</created>
@@ -113,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668264996926</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Make Jenkins clean before compile.">
+      <created>1668265141690</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668265141690</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +148,7 @@
     <MESSAGE value="Fix base64." />
     <MESSAGE value="Bump version, hardcode to compile java 1.4." />
     <MESSAGE value="Fix when content-length is undefined." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix when content-length is undefined." />
+    <MESSAGE value="Make Jenkins clean before compile." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make Jenkins clean before compile." />
   </component>
 </project>
