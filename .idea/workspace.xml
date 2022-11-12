@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix Net class polymorphism.">
+    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix base64.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/Base64.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/Base64.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668259824412</updated>
-      <workItem from="1668259826800" duration="2362000" />
+      <workItem from="1668259826800" duration="2492000" />
     </task>
     <task id="LOCAL-00001" summary="Working.">
       <created>1668261114610</created>
@@ -73,7 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668262133739</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Make Jenkinsfile compile at java 1.4 level.">
+      <created>1668262268112</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668262268112</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix base64.">
+      <created>1668262340690</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668262340690</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +108,8 @@
     <MESSAGE value="Working." />
     <MESSAGE value="Add Jenkinsfile." />
     <MESSAGE value="Fix Net class polymorphism." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Net class polymorphism." />
+    <MESSAGE value="Make Jenkinsfile compile at java 1.4 level." />
+    <MESSAGE value="Fix base64." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix base64." />
   </component>
 </project>
