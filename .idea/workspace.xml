@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix when content-length is undefined.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" afterDir="false" />
-    </list>
+    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix when content-length is undefined." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668259824412</updated>
       <workItem from="1668259826800" duration="3372000" />
-      <workItem from="1668264631314" duration="354000" />
+      <workItem from="1668264631314" duration="496000" />
     </task>
     <task id="LOCAL-00001" summary="Working.">
       <created>1668261114610</created>
@@ -102,7 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668262652247</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fix when content-length is undefined.">
+      <created>1668264986229</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668264986229</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fix when content-length is undefined.">
+      <created>1668264996926</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668264996926</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

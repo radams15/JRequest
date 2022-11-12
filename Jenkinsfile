@@ -8,7 +8,7 @@ pipeline {
     stages{
         stage('Build'){
             steps{
-                sh 'mvn compile package'
+                sh 'mvn clean compile package'
                 
                 archiveArtifacts artifacts: 'target/Request-*-jar-with-dependencies.jar'
             }
