@@ -8,7 +8,7 @@ pipeline {
     stages{
         stage('Build'){
             steps{
-                sh 'mvn compile package -Dmaven.compiler.source=1.4 -Dmaven.compiler.target=1.4'
+                sh 'mvn compile package'
                 
                 archiveArtifacts artifacts: 'target/Request-*-jar-with-dependencies.jar'
             }
