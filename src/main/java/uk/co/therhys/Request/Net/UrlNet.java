@@ -81,18 +81,26 @@ public class UrlNet extends Net {
             http.setRequestMethod("GET");
             http.setDoOutput(true);
 
+            if(!headers.containsKey("Content-Type")){
+                headers.put("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+            }
+
             for(int i=0 ; i<headers.entrySet().size() ; i++){
                 Map.Entry entry = (Map.Entry) headers.entrySet().toArray()[i];
 
                 http.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
             }
 
-            http.setRequestProperty("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
             http.connect();
+
+            int length = http.getContentLength();
+            if(length == -1){
+                length = 1000*1000; // = 1MB;
+            }
 
             InputStream is =  new BufferedInputStream(http.getInputStream());
 
-            ByteBuffer buf = ByteBuffer.allocate(http.getContentLength());
+            ByteBuffer buf = ByteBuffer.allocate(length);
             byte[] line = new byte[chunkSize];
             while(true){
                 int len = is.read(line, 0, chunkSize);
