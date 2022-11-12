@@ -11,7 +11,7 @@ import java.util.Map;
 public class UrlNet extends Net {
 
     private final static int chunkSize = 1024;
-    public Result post_auth(String urlStr, String data, HashMap headers, String username, String password){
+    public Result post(String urlStr, String data, HashMap headers){
         Result res = new Result();
 
         try {
@@ -20,10 +20,6 @@ public class UrlNet extends Net {
             HttpURLConnection http = (HttpURLConnection) con;
             http.setRequestMethod("POST");
             http.setDoOutput(true);
-
-            byte[] authBytes = (username+":"+password).getBytes("UTF-8");
-            String authStr = "Basic " + Base64.encode(authBytes);
-            http.setRequestProperty("Authorization", authStr);
 
             for(int i=0 ; i<headers.entrySet().size() ; i++){
                 Map.Entry entry = (Map.Entry) headers.entrySet().toArray()[i];

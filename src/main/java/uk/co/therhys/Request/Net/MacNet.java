@@ -14,20 +14,6 @@ public class MacNet extends Net {
         }
     }
 
-    public Result post_auth(String urlStr, String data, HashMap headers, String username, String password) {
-        try {
-            byte[] authBytes = (username + ":" + password).getBytes("UTF-8");
-            String authStr = "Basic " + new Base64().encode(authBytes);
-            headers.put("Authorization", authStr);
-        }catch (Exception e){
-            System.err.println("Could not convert base64 sequence correctly!");
-            e.printStackTrace();
-            return null;
-        }
-
-        return post(urlStr, data, headers);
-    }
-
     public Result post(String urlStr, String data, HashMap headers) {
         String[][] headersArry = new String[headers.size()][2];
 
