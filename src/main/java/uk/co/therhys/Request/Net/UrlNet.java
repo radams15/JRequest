@@ -32,7 +32,7 @@ public class UrlNet extends Net {
             //http.setFixedLengthStreamingMode(toSend.length);
 
             if(!headers.containsKey("Content-Type")){
-                headers.put("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+                headers.put("Content-Type", "text/html; charset=UTF-8");
             }
 
             http.connect();
