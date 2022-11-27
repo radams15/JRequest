@@ -21,6 +21,8 @@ public class UrlNet extends Net {
             http.setRequestMethod("POST");
             http.setDoOutput(true);
 
+            con.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB;     rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 (.NET CLR 3.5.30729)");
+
             for(int i=0 ; i<headers.entrySet().size() ; i++){
                 Map.Entry entry = (Map.Entry) headers.entrySet().toArray()[i];
 
@@ -92,6 +94,8 @@ public class UrlNet extends Net {
             HttpURLConnection http = (HttpURLConnection) con;
             http.setRequestMethod("GET");
             http.setDoOutput(true);
+
+            con.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB;     rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 (.NET CLR 3.5.30729)");
 
             if(!headers.containsKey("Content-Type")){
                 headers.put("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
