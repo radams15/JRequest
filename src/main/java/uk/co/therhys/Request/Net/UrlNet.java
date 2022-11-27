@@ -39,40 +39,22 @@ public class UrlNet extends Net {
 
             http.connect();
 
-            OutputStream os = null;
-            try {
-                os = http.getOutputStream();
-                os.write(toSend);
-            }finally {
-                if(os != null) {
-                    os.close();
-                }
-            }
-
-            int length = http.getContentLength();
-            if(length == -1){
-                length = 1000*1000; // = 1MB;
-            }
-
             InputStream is =  new BufferedInputStream(http.getInputStream());
 
             int actualLength = 0;
-
-            ByteBuffer buf = ByteBuffer.allocate(length);
+            StringBuffer buf = new StringBuffer();
             byte[] line = new byte[chunkSize];
             while(true){
                 int len = is.read(line, 0, chunkSize);
                 if(len != -1) {
                     actualLength += len;
-                    for(int i=0 ; i<len ; i++){
-                        buf.put(line[i]);
-                    }
+                    buf.append(new String(line));
                 }else{
                     break;
                 }
             }
 
-            res.data = buf.compact().array();
+            res.data = buf.toString().getBytes();
 
             res.length = actualLength;
 
@@ -109,29 +91,24 @@ public class UrlNet extends Net {
 
             http.connect();
 
-            int length = http.getContentLength();
-            if(length == -1){
-                length = 1000*1000; // = 1MB;
-            }
-
             InputStream is =  new BufferedInputStream(http.getInputStream());
 
             int actualLength = 0;
-            ByteBuffer buf = ByteBuffer.allocate(length);
+            StringBuffer buf = new StringBuffer();
             byte[] line = new byte[chunkSize];
             while(true){
                 int len = is.read(line, 0, chunkSize);
                 if(len != -1) {
                     actualLength += len;
-                    for(int i=0 ; i<len ; i++){
-                        buf.put(line[i]);
-                    }
+                    buf.append(new String(line));
                 }else{
                     break;
                 }
             }
 
-            res.data = buf.compact().array();
+            System.out.println(buf);
+
+            res.data = buf.toString().getBytes();
 
             res.length = actualLength;
 

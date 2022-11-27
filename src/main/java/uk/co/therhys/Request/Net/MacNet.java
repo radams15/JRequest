@@ -8,7 +8,7 @@ import java.util.Map;
 public class MacNet extends Net {
     static {
         try {
-            NativeUtils.loadLibraryFromJar("/libnet.dylib");
+            NativeUtils.loadLibraryFromJar("/librequest.dylib");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
