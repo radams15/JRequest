@@ -9,6 +9,6 @@ public class Main {
 
         Result ret = net.get("https://inv.riverside.rocks/api/v1/channels/UC1D3yD4wlPMico0dss264XA", new HashMap());
 
-        System.out.println(ret.toString());
+        System.out.println(ret);
     }
 }

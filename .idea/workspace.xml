@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix by faking firefox user agent.">
+    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix native util name.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/MacNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/MacNet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
     </list>
@@ -36,19 +35,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/mnt/share/scripts/java/Request/src/main&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/mnt/share/scripts/java/Request",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
@@ -82,7 +86,9 @@
       <workItem from="1668264631314" duration="1399000" />
       <workItem from="1668266091794" duration="625000" />
       <workItem from="1669569509702" duration="755000" />
-      <workItem from="1669570495695" duration="592000" />
+      <workItem from="1669570495695" duration="1065000" />
+      <workItem from="1669644955205" duration="4000" />
+      <workItem from="1675440720110" duration="933000" />
     </task>
     <task id="LOCAL-00001" summary="Working.">
       <created>1668261114610</created>
@@ -196,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669570158332</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fix native util name.">
+      <created>1669571103770</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669571103770</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +240,7 @@
     <MESSAGE value="Fix content-type override." />
     <MESSAGE value="Fix get method content-type header." />
     <MESSAGE value="Fix by faking firefox user agent." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix by faking firefox user agent." />
+    <MESSAGE value="Fix native util name." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix native util name." />
   </component>
 </project>

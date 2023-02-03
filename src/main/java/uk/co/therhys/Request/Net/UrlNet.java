@@ -29,7 +29,12 @@ public class UrlNet extends Net {
                 http.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
             }
 
-            byte[] toSend = data.getBytes();
+            OutputStream os = http.getOutputStream();
+            OutputStreamWriter osw = new OutputStreamWriter(os, "UTF-8");
+            osw.write(data);
+            osw.flush();
+            osw.close();
+            os.close();  //don't forget to close the OutputStream
 
             //http.setFixedLengthStreamingMode(toSend.length);
 
@@ -43,15 +48,12 @@ public class UrlNet extends Net {
 
             int actualLength = 0;
             StringBuffer buf = new StringBuffer();
-            byte[] line = new byte[chunkSize];
-            while(true){
-                int len = is.read(line, 0, chunkSize);
-                if(len != -1) {
-                    actualLength += len;
-                    buf.append(new String(line));
-                }else{
-                    break;
-                }
+
+            int byteRes = is.read();
+            while(byteRes != -1){
+                actualLength += byteRes;
+                buf.append((char) byteRes);
+                byteRes = is.read();
             }
 
             res.data = buf.toString().getBytes();
@@ -59,6 +61,7 @@ public class UrlNet extends Net {
             res.length = actualLength;
 
         }catch (Exception e){
+            System.err.println(e);
             res.hadError = true;
             res.error = e;
             return res;
@@ -95,15 +98,12 @@ public class UrlNet extends Net {
 
             int actualLength = 0;
             StringBuffer buf = new StringBuffer();
-            byte[] line = new byte[chunkSize];
-            while(true){
-                int len = is.read(line, 0, chunkSize);
-                if(len != -1) {
-                    actualLength += len;
-                    buf.append(new String(line));
-                }else{
-                    break;
-                }
+
+            int byteRes = is.read();
+            while(byteRes != -1){
+                actualLength += byteRes;
+                buf.append((char) byteRes);
+                byteRes = is.read();
             }
 
             System.out.println(buf);
