@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix native util name.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uk/co/therhys/Request/Net/UrlNet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
+    <list default="true" id="ff734900-159b-4db8-91d7-9c5576c13518" name="Changes" comment="Fix UrlNet not reading whole output.">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
       <workItem from="1669569509702" duration="755000" />
       <workItem from="1669570495695" duration="1065000" />
       <workItem from="1669644955205" duration="4000" />
-      <workItem from="1675440720110" duration="933000" />
+      <workItem from="1675440720110" duration="1166000" />
     </task>
     <task id="LOCAL-00001" summary="Working.">
       <created>1668261114610</created>
@@ -209,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669571103770</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix UrlNet not reading whole output.">
+      <created>1675441681977</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675441681977</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +246,7 @@
     <MESSAGE value="Fix get method content-type header." />
     <MESSAGE value="Fix by faking firefox user agent." />
     <MESSAGE value="Fix native util name." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix native util name." />
+    <MESSAGE value="Fix UrlNet not reading whole output." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix UrlNet not reading whole output." />
   </component>
 </project>
